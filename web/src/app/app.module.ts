@@ -71,6 +71,7 @@ import { TournamentsDetailsPageComponent } from './components/pages/tournaments-
 import { MatchDetailsPageComponent } from './components/pages/match-details-page/match-details-page.component';
 import { TeamDetailsPageComponent } from './components/pages/team-details-page/team-details-page.component';
 import { PlayerDetailsPageComponent } from './components/pages/player-details-page/player-details-page.component';
+import { LandingComponent } from './components/landing/landing.component';
 
 @NgModule({
   declarations: [
@@ -143,6 +144,7 @@ import { PlayerDetailsPageComponent } from './components/pages/player-details-pa
     MatchDetailsPageComponent,
     TeamDetailsPageComponent,
     PlayerDetailsPageComponent,
+    LandingComponent,
   ],
   imports: [
     BrowserModule,

@@ -5,6 +5,34 @@
     src: url(assets/fonts/BebasNeue-Regular.svg);
     src: url(assets/fonts/BebasNeue-Regular.woff);
 }
+
+@font-face {
+    font-family: "Bold";
+    src: url(./assets/fonts/CopperplateCC-Bold.ttf);
+    font-weight: 900;
+  }
+  
+  @font-face {
+    font-family: "Heavy";
+    src: url(./assets/fonts/CopperplateCC-Heavy.ttf);
+    font-weight: 800;
+  }
+  @font-face {
+    font-family: "Lora-Italic";
+    src: url(./assets/fonts/Lora-Italic.ttf);
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: "Lora-Regular";
+    src: url(./assets/fonts/Lora-Regular.ttf);
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: "Regular";
+    src: url(./assets/fonts/OPTICopperplate.otf);
+    font-weight: 700;
+  }
 :root {
     --fontFamily: 'Teko', sans-serif;
     --fontFamily2: BebasNeue-Regular;
