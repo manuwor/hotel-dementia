@@ -4,20 +4,30 @@
 
     <div class="section-2-control d-flex flex-column">
 
-        <img src="./assets/img/landing/section-2-img.png" class="bg-img" />
+        <img src="./assets/img/landing/section-2-img.png" class="d-none d-md-block bg-img" />
+        <img src="./assets/img/landing/section-2-img-mobile.png" class="d-block d-md-none bg-img" />
         <div class="container text-control d-flex flex-column">
             <span class="text-white-invite">THE INVITATON</span>
             <span class="text-white-invite">MINTING SOON</span>
             <span class="text-red-invite">18.06.22</span>
 
-            <div class="border-video"></div>
+            <div class="border-video">
+                <vg-player>
+                    <vg-overlay-play></vg-overlay-play>
+
+                    <video [vgMedia]="media" #media id="singleVideo" preload="auto" controls>
+                        <source src="./assets/img/hotelvideo.mp4" type="video/mp4">
+                    </video>
+                </vg-player>
+            </div>
         </div>
 
     </div>
 
     <div class="section-3-control d-flex flex-column">
 
-        <img src="./assets/img/landing/section-3-bg.png" class="bg-img" />
+        <img src="./assets/img/landing/section-3-bg.png" class="d-none d-md-block bg-img" />
+        <img src="./assets/img/landing/section-3-bg-mobile.png" class="d-block d-md-none bg-img" />
     </div>
 
     <div class="section-4-control">
@@ -44,19 +54,19 @@
                 </div>
                 <div class="d-flex flex-column">
 
-                    <img src="./assets/img/landing/TheNovelty.gif" class="vdo-gif">
+                    <img src="./assets/img/landing/TheInvitation.gif" class="vdo-gif">
                     <span class="text-collecton">Collection I</span>
                     <span class="text-name">THE NOVELTY</span>
                     <span class="text-total-nft">2,000 NFTs</span>
-                    <span class="text-date">April 2022</span>
+                    <span class="text-date">June 2022</span>
                 </div>
                 <div class="d-flex flex-column">
 
-                    <img src="./assets/img/landing/TheInvitation.gif" class="vdo-gif">
+                    <img src="./assets/img/landing/the-grandball.png" class="vdo-gif">
                     <span class="text-collecton">Collection II</span>
-                    <span class="text-name">THE INVITATION</span>
-                    <span class="text-total-nft">2,000 NFTs</span>
-                    <span class="text-date">June 2022</span>
+                    <span class="text-name">THE GRAND BALL</span>
+                    <span class="text-total-nft">6,000 NFTs</span>
+                    <span class="text-date">August 2022</span>
                 </div>
             </div>
 
@@ -123,122 +133,154 @@
 
             </div>
 
-            <img src="./assets/img/landing/section-5-img-1.jpg" class="img-bottom">
-            <img src="./assets/img/landing/section-5-img-2.png" class="img-logo-hotel">
-
-            <div class="grid-bottom-control">
-
-                <div class="border-control d-flex">
-
-                    <div class="text-control my-auto mx-auto">
-                        <span class="text-header">Total Supply</span>
-                        <span class="text-red">2,000 NFTs</span>
-                    </div>
-
-                </div>
-                <div class="border-center-control d-flex flex-column">
-
-                    <div class="text-center my-auto mx-auto">
-                        <span class="text-header">Whitelist Sales</span>
-                        <span class="text-red">18.06.22 / 21.00</span>
-                    </div>
-                    <div class="divider-red"></div>
-                    <div class="text-center my-auto mx-auto">
-                        <span class="text-header">Public Sales</span>
-                        <span class="text-red">18.06.22 / 24.00</span>
-                    </div>
-
-                </div>
-                <div class="border-control">
-                    <div class="text-center my-auto mx-auto">
-                        <span class="text-header">Whitelist Price</span>
-                        <span class="text-red">1 SOL</span>
-                    </div>
-                    <div class="divider-red"></div>
-                    <div class="text-center my-auto mx-auto">
-                        <span class="text-header">Public Price</span>
-                        <span class="text-red">1.25 SOL</span>
-                    </div>
-                </div>
-            </div>
-
-            <span class="text-count-down">
-                COUNTDOWN
-            </span>
         </div>
 
-    </div>
-    <div class="section-6-control d-flex flex-column">
-
-        <img src="./assets/img/landing/roadmap.png" class="roadmap-img">
-
-    </div>
-    <div class="section-7-control d-flex flex-column">
-
-        <img src="./assets/img/landing/partner.png" class="partner-img">
-
-    </div>
-
-    <div class="section-8-control d-flex flex-column">
+        <img src="./assets/img/landing/section-5-img-1.jpg" class="img-bottom">
+        <img src="./assets/img/landing/section-5-img-2.png" class="img-logo-hotel">
 
         <div class="container d-flex flex-column">
 
+        <div class="grid-bottom-control">
 
-            <span class="text-header">
-                CONCIERGE
-            </span>
+            <div class="border-control d-flex">
 
-            <div class="grid-control">
+                <div class="text-control my-auto mx-auto">
+                    <span class="text-header">Total Supply</span>
+                    <span class="text-red">2,000 NFTs</span>
+                </div>
 
-                <div class="item-control">
-                    <img src="./assets/img/landing/team-1.png" class="profile-img">
-                    <span class="profile-name">RIETY</span>
-                    <span class="profile-position">Project Owner & Main Artists</span>
-                </div>
-                <div class="item-control">
-                    <img src="./assets/img/landing/team-2.png" class="profile-img">
-                    <span class="profile-name">PERAKARN</span>
-                    <span class="profile-position">Project Manager</span>
-                </div>
-                <div class="item-control">
-                    <img src="./assets/img/landing/team-3.png" class="profile-img">
-                    <span class="profile-name">FLINTSTONE</span>
-                    <span class="profile-position">Community Manager</span>
-                </div>
-                <div class="item-control">
-                    <img src="./assets/img/landing/team-4.png" class="profile-img">
-                    <span class="profile-name">GHOZT</span>
-                    <span class="profile-position">Blockchain Developer</span>
-                </div>
             </div>
-            <div class="grid-control">
+            <div class="border-center-control d-flex flex-column">
 
-                <div class="item-control">
-                    <img src="./assets/img/landing/team-5.png" class="profile-img">
-                    <span class="profile-name">ZTEVE</span>
-                    <span class="profile-position">Blockchain Developer</span>
+                <div class="text-center my-auto mx-auto">
+                    <span class="text-header">Whitelist Sales</span>
+                    <span class="text-red">18.06.22 / 21.00</span>
                 </div>
-                <div class="item-control">
-                    <img src="./assets/img/landing/team-6.png" class="profile-img">
-                    <span class="profile-name">DOW</span>
-                    <span class="profile-position">Game Developer</span>
+                <div class="divider-red"></div>
+                <div class="text-center my-auto mx-auto">
+                    <span class="text-header">Public Sales</span>
+                    <span class="text-red">18.06.22 / 24.00</span>
                 </div>
-                <div class="item-control">
-                    <img src="./assets/img/landing/team-7.png" class="profile-img">
-                    <span class="profile-name">FONE</span>
-                    <span class="profile-position">Designer & 3D Generalist</span>
+
+            </div>
+            <div class="border-control">
+                <div class="text-center my-auto mx-auto">
+                    <span class="text-header">Whitelist Price</span>
+                    <span class="text-red">1 SOL</span>
                 </div>
-                <div class="item-control">
-                    <img src="./assets/img/landing/team-8.png" class="profile-img">
-                    <span class="profile-name">HOUSE</span>
-                    <span class="profile-position">Sound Creative & Social Media Manager</span>
+                <div class="divider-red"></div>
+                <div class="text-center my-auto mx-auto">
+                    <span class="text-header">Public Price</span>
+                    <span class="text-red">1.25 SOL</span>
                 </div>
             </div>
         </div>
+
+        <span class="text-count-down">
+            COUNTDOWN
+        </span>
+
+        <app-count-down-timer> </app-count-down-timer>
+
+        <img src="./assets/img/landing/mint-now.png" class="mint-now-button">
     </div>
 
-    <div class="section-9-control">
+</div>
+<div class="section-6-control d-flex flex-column">
 
-        
+
+    <img src="./assets/img/landing/roadmap.png" class="d-none d-md-block roadmap-img">
+    <img src="./assets/img/landing/roadmap-mobile.png" class="d-block d-md-none roadmap-img">
+</div>
+<div class="section-7-control d-flex flex-column">
+
+    <img src="./assets/img/landing/partner.png" class="d-none d-md-block partner-img">
+    <img src="./assets/img/landing/partner-mobile.png" class="d-block d-md-none partner-img">
+</div>
+
+<div class="section-8-control d-flex flex-column">
+
+    <div class="container d-flex flex-column">
+
+
+        <span class="text-header">
+            CONCIERGE
+        </span>
+
+        <div class="grid-control">
+
+            <div class="item-control">
+                <img src="./assets/img/landing/team-1.png" class="profile-img">
+                <span class="profile-name">RIETY</span>
+                <span class="profile-position">Project Owner & Main Artists</span>
+            </div>
+            <div class="item-control">
+                <img src="./assets/img/landing/team-2.png" class="profile-img">
+                <span class="profile-name">PERAKARN</span>
+                <span class="profile-position">Project Manager</span>
+            </div>
+            <div class="item-control">
+                <img src="./assets/img/landing/team-3.png" class="profile-img">
+                <span class="profile-name">FLINTSTONE</span>
+                <span class="profile-position">Community Manager</span>
+            </div>
+            <div class="item-control">
+                <img src="./assets/img/landing/team-4.png" class="profile-img">
+                <span class="profile-name">GHOZT</span>
+                <span class="profile-position">Blockchain Developer</span>
+            </div>
+        </div>
+        <div class="grid-control">
+
+            <div class="item-control">
+                <img src="./assets/img/landing/team-5.png" class="profile-img">
+                <span class="profile-name">ZTEVE</span>
+                <span class="profile-position">Blockchain Developer</span>
+            </div>
+            <div class="item-control">
+                <img src="./assets/img/landing/team-6.png" class="profile-img">
+                <span class="profile-name">DOW</span>
+                <span class="profile-position">Game Developer</span>
+            </div>
+            <div class="item-control">
+                <img src="./assets/img/landing/team-7.png" class="profile-img">
+                <span class="profile-name">FONE</span>
+                <span class="profile-position">Designer & 3D Generalist</span>
+            </div>
+            <div class="item-control">
+                <img src="./assets/img/landing/team-8.png" class="profile-img">
+                <span class="profile-name">HOUSE</span>
+                <span class="profile-position">Sound Creative & Social Media Manager</span>
+            </div>
+        </div>
     </div>
+</div>
+
+<div class="section-9-control">
+
+    <div class="container d-flex flex-column">
+
+        <img src="./assets/img/landing/lite-paper-button.png" class="lite-paper-button mx-auto">
+        <span class="text-our-marketplace">Our Marketplace</span>
+
+        <div class="button-marketplace-control">
+
+            <img src="./assets/img/landing/magic-eden.png" class="button-marketplace">
+            <img src="./assets/img/landing/solanart.png" class="button-marketplace">
+        </div>
+
+        <span class="text-our-marketplace">CHECK IT NOW</span>
+
+        <div class="social-grid-control">
+
+            <img src="./assets/img/landing/ic-discord.png" class="social-icon">
+            <img src="./assets/img/landing/ic-twitter.png" class="social-icon">
+            <img src="./assets/img/landing/ic-facebook.png" class="social-icon">
+            <img src="./assets/img/landing/ic-ig.png" class="social-icon">
+        </div>
+        <span class="text-copy-right">© 2022 HOTELDEMENTIA GAME NFT. WEB BY ::*</span>
+
+    </div>
+
+</div>
 </div>

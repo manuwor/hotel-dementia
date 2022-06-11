@@ -15,12 +15,21 @@ app-landing {
     .section-2-control {
         position: relative;
 
+        @include media-breakpoint-down(md){
+            padding-bottom: 100px;
+        }
+
         .bg-img {
             background-color: black;
             position: absolute;
             width: 100%;
             height: 100%;
             object-fit: cover;
+
+            @include media-breakpoint-down(md){
+                object-fit: cover;
+                height: 742px;
+            }
         }
 
         .text-control {
@@ -35,6 +44,10 @@ app-landing {
             color: white;
             text-align: center;
             text-shadow: 0px 0px 20px #ffffff;
+
+            @include media-breakpoint-down(md) {
+                font-size: 32px;
+            }
         }
 
         .text-red-invite {
@@ -44,13 +57,18 @@ app-landing {
             color: $red;
             font-family: "Bold";
             text-align: center;
-            text-shadow: 0px 0px 20px #ffffff;
+            text-shadow: 0px 0px 40px #E04B36;
+
+            @include media-breakpoint-down(md) {
+                font-size: 68px;
+            }
         }
 
         .border-video {
             margin-top: 183px;
             border: solid 1px $red;
             padding: 4px;
+            margin-bottom: 100px;
         }
     }
 
@@ -73,15 +91,23 @@ app-landing {
             font-weight: 700;
             color: white;
             text-align: center;
+
+            @include media-breakpoint-down(md) {
+                font-size: 40px;
+            }
         }
 
         .text-desc {
-            font-family: "Regular";
+            font-family: "Lora-Regular";
             margin-top: 17px;
             font-size: 15px;
             font-weight: 400;
             color: white;
             text-align: center;
+
+            @include media-breakpoint-down(md) {
+                font-size: 14px;
+            }
         }
 
         .grid-control {
@@ -90,12 +116,20 @@ app-landing {
             display: grid;
             grid-template-columns: 33% 33% 33%;
 
+            @include media-breakpoint-down(md) {
+                grid-template-columns: 100%;
+            }
+
             .vdo-gif {
                 margin-left: auto;
                 margin-right: auto;
                 width: 80%;
                 height: auto;
                 object-fit: contain;
+
+                @include media-breakpoint-down(md){
+                    margin-top: 57px;
+                }
             }
 
             .text-collecton {
@@ -104,6 +138,9 @@ app-landing {
                 font-family: "Lora-Italic";
                 color: white;
                 margin-top: 21px;
+                @include media-breakpoint-down(md){
+                    font-size: 16px;
+                }
             }
 
             .text-name {
@@ -113,6 +150,10 @@ app-landing {
                 color: white;
                 text-align: center;
                 text-shadow: 0px 0px 20px #ffffff;
+
+                @include media-breakpoint-down(md){
+                    font-size: 34px;
+                }
             }
 
             .text-total-nft {
@@ -121,6 +162,9 @@ app-landing {
                 font-size: 15px;
                 color: white;
                 text-align: center;
+                @include media-breakpoint-down(md){
+                    font-size: 14px;
+                }
             }
 
             .text-date {
@@ -128,6 +172,9 @@ app-landing {
                 font-size: 20px;
                 color: white;
                 text-align: center;
+                @include media-breakpoint-down(md){
+                    font-size: 18px;
+                }
             }
         }
     }
@@ -139,6 +186,21 @@ app-landing {
         background-repeat: no-repeat;
         background-size: cover;
 
+        @include media-breakpoint-down(md){
+            padding-top: 180px;
+        }
+
+        .mint-now-button{
+            cursor: pointer;
+            height: 99px;
+            width: auto;
+            object-fit: contain;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 52px;
+            margin-bottom: 100px;
+        }
+
         .text-white {
             font-family: "Bold";
             font-size: 96px;
@@ -146,6 +208,10 @@ app-landing {
             color: white;
             text-align: center;
             text-shadow: 0px 0px 20px #ffffff;
+
+            @include media-breakpoint-down(md) {
+                font-size: 68px;
+            }
         }
 
         .text-white-desc {
@@ -154,6 +220,10 @@ app-landing {
             font-weight: 700;
             color: white;
             text-align: center;
+
+            @include media-breakpoint-down(md) {
+                font-size: 14px;
+            }
         }
 
         .tribe-control {
@@ -161,22 +231,42 @@ app-landing {
 
             .tribe-1-control {
                 width: 360px;
+
+                @include media-breakpoint-down(md) {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
             }
             .tribe-2-control {
                 margin-top: -120px;
                 width: 360px;
                 margin-left: auto;
+                @include media-breakpoint-down(md) {
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 40px;
+                }
             }
 
             .tribe-3-control {
                 width: 360px;
                 margin-left: auto;
                 margin-right: auto;
+                @include media-breakpoint-down(md) {
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 40px;
+                }
             }
 
             .tribe-4-control {
                 width: 360px;
                 margin-left: 10%;
+                @include media-breakpoint-down(md) {
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 40px;
+                }
             }
 
             .tribe-5-control {
@@ -184,6 +274,11 @@ app-landing {
                 width: 360px;
                 margin-left: auto;
                 margin-right: 15%;
+                @include media-breakpoint-down(md) {
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 40px;
+                }
             }
             .tribe-text {
                 font-family: "Bold";
@@ -192,6 +287,10 @@ app-landing {
                 color: white;
                 text-align: center;
                 text-shadow: 0px 0px 20px #ffffff;
+
+                @include media-breakpoint-down(md) {
+                    font-size: 32px;
+                }
             }
 
             .tribe-grid {
@@ -199,6 +298,8 @@ app-landing {
                 width: auto;
                 display: grid;
                 grid-template-columns: 33% 33% 33%;
+
+               
 
                 .tribe-img {
                     width: 120px;
@@ -215,6 +316,11 @@ app-landing {
             object-fit: contain;
             margin-left: auto;
             margin-right: auto;
+
+            @include media-breakpoint-down(md){
+                margin-top: 100px;
+                width: 100%;
+            }
         }
 
         .img-logo-hotel {
@@ -224,12 +330,22 @@ app-landing {
             margin-left: auto;
             margin-right: auto;
             margin-top: -80px;
+
+            @include media-breakpoint-down(md){
+                height: auto;
+                width: 100%;
+                margin-top: -35%;
+            }
         }
 
         .grid-bottom-control {
-            margin-top: 69px;
+            margin-top: 55px;
             display: grid;
             grid-template-columns: 30% 39% 30%;
+
+            @include media-breakpoint-down(md){
+                grid-template-columns: 100%;
+            }
 
             .border-control {
                 width: 100%;
@@ -262,12 +378,17 @@ app-landing {
                 display: flex;
                 flex-direction: column;
                 height: 125px;
+
+
                 .text-header {
                     text-align: center;
                     font-size: 18px;
                     font-family: "Lora-Italic";
                     color: white;
                     margin-top: 21px;
+                    @include media-breakpoint-down(md){
+                        font-size: 16px;
+                    }
                 }
 
                 .text-red {
@@ -277,6 +398,10 @@ app-landing {
                     font-family: "Bold";
                     text-align: center;
                     text-shadow: 0px 0px 20px #ffffff;
+
+                    @include media-breakpoint-down(md){
+                        font-size: 36px;
+                    }
                 }
             }
 
@@ -291,6 +416,12 @@ app-landing {
                 margin-left: auto;
                 margin-right: auto;
                 border: solid 1px $red;
+
+                @include media-breakpoint-down(md){
+                    width: 100%;
+                    margin-top: 29px;
+                    margin-bottom: 29px;
+                }
             }
         }
         .text-count-down {
@@ -301,6 +432,10 @@ app-landing {
             font-family: "Bold";
             text-align: center;
             text-shadow: 0px 0px 20px #ffffff;
+
+            @include media-breakpoint-down(md){
+                font-size: 34px;
+            }
         }
     }
 
@@ -331,14 +466,23 @@ app-landing {
             font-weight: 700;
             color: white;
             text-align: center;
+
+            @include media-breakpoint-down(md){
+                font-size: 40px;
+            }
         }
 
-        .grid-control{
+        .grid-control {
             margin-top: 50px;
             display: grid;
             grid-template-columns: 25% 25% 25% 25%;
 
-            .item-control{
+            @include media-breakpoint-down(md){
+                grid-template-columns: 50% 50%;
+                margin-top: 0px;
+            }
+
+            .item-control {
                 width: 80%;
                 height: auto;
                 margin-left: auto;
@@ -346,13 +490,18 @@ app-landing {
                 display: flex;
                 flex-direction: column;
 
-                .profile-img{
+                @include media-breakpoint-down(md){
+                    width: 90%;
+                    margin-top: 24px;
+                }
+
+                .profile-img {
                     width: 100%;
                     height: auto;
                     object-fit: contain;
                 }
 
-                .profile-name{
+                .profile-name {
                     margin-top: 14px;
                     font-size: 30px;
                     font-weight: 700;
@@ -360,25 +509,132 @@ app-landing {
                     font-family: "Bold";
                     text-align: center;
                     text-shadow: 0px 0px 20px #ffffff;
+                    @include media-breakpoint-down(md){
+                        font-size: 20px;
+                    }
                 }
 
-                .profile-position{
+                .profile-position {
                     margin-top: 14px;
                     font-size: 15px;
                     font-weight: 700;
                     color: white;
                     font-family: "Lora-Regular";
                     text-align: center;
+                    @include media-breakpoint-down(md){
+                        font-size: 14px;
+                    }
                 }
             }
         }
     }
 
-    .section-9-control{
-
+    .section-9-control {
         background: url(../../../assets/img/landing/section-9-bg.jpg);
-        background-position: bottom center;
+        background-position: top;
         background-size: cover;
         background-repeat: no-repeat;
+
+        .lite-paper-button {
+            cursor: pointer;
+            width: 353px;
+            height: 109px;
+            object-fit: contain;
+            margin-top: 117px;
+
+         
+        }
+
+        .text-our-marketplace {
+            margin-top: 104px;
+            font-size: 40px;
+            font-weight: 700;
+            color: $red;
+            font-family: "Bold";
+            text-align: center;
+            text-shadow: 0px 0px 20px #ff1f00;
+
+            @include media-breakpoint-down(md){
+                font-size: 32px;
+            }
+        }
+
+        .button-marketplace-control {
+            margin-top: 25px;
+            display: flex;
+            flex-direction: row;
+            margin-left: auto;
+            margin-right: auto;
+
+            @include media-breakpoint-down(md){
+                flex-direction: column;
+            }
+
+            .button-marketplace {
+                cursor: pointer;
+                height: 56px;
+                width: auto;
+                object-fit: contain;
+                margin-left: 24px;
+                margin-right: 24px;
+
+                @include media-breakpoint-down(md){
+                    margin-top: 18px;
+                    height: 38px;
+                }
+            }
+        }
+
+        .social-grid-control {
+            margin-top: 25px;
+            width: 306px;
+            margin-left: auto;
+            margin-right: auto;
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            
+
+            .social-icon {
+                width: 42px;
+                height: 32px;
+                object-fit: contain;
+                margin-left: auto;
+                margin-right: auto;
+
+                @include media-breakpoint-down(md){
+                    height: 24px;
+                }
+            }
+        }
+
+        .text-copy-right {
+            margin-top: 171px;
+            font-family: "Lora-Regular";
+            font-size: 13px;
+            color: white;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    }
+    vg-overlay-play .vg-overlay-play {
+        display: flex;
+    }
+    vg-overlay-play .vg-overlay-play .overlay-play-container.vg-icon-play_arrow {
+        color: $red !important;
+        width: 80px;
+        height: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    .vg-icon-play_arrow {
+        border: solid 2px $red;
+        border-radius: 50%;
     }
 }

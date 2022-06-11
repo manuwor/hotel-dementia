@@ -72,6 +72,12 @@ import { MatchDetailsPageComponent } from './components/pages/match-details-page
 import { TeamDetailsPageComponent } from './components/pages/team-details-page/team-details-page.component';
 import { PlayerDetailsPageComponent } from './components/pages/player-details-page/player-details-page.component';
 import { LandingComponent } from './components/landing/landing.component';
+import { VgCoreModule } from '@videogular/ngx-videogular/core';
+import { VgControlsModule } from '@videogular/ngx-videogular/controls';
+import { VgOverlayPlayModule } from '@videogular/ngx-videogular/overlay-play';
+import { VgBufferingModule } from '@videogular/ngx-videogular/buffering';
+import { CountdownModule } from 'ngx-countdown';
+import { CountDownTimerComponent } from './components/count-down-timer/count-down-timer.component';
 
 @NgModule({
   declarations: [
@@ -145,12 +151,19 @@ import { LandingComponent } from './components/landing/landing.component';
     TeamDetailsPageComponent,
     PlayerDetailsPageComponent,
     LandingComponent,
+    CountDownTimerComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    VgCoreModule,
+    VgControlsModule,
+    VgOverlayPlayModule,
+    VgBufferingModule,
+    CountdownModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
