@@ -79,6 +79,7 @@ import { VgBufferingModule } from '@videogular/ngx-videogular/buffering';
 import { CountdownModule } from 'ngx-countdown';
 import { CountDownTimerComponent } from './components/count-down-timer/count-down-timer.component';
 import { NgxGoogleAnalyticsModule } from 'ngx-google-analytics';
+import { ComingSoonComponent } from './components/coming-soon/coming-soon.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -152,6 +153,7 @@ import { NgxGoogleAnalyticsModule } from 'ngx-google-analytics';
     PlayerDetailsPageComponent,
     LandingComponent,
     CountDownTimerComponent,
+    ComingSoonComponent,
   ],
   imports: [
     BrowserModule,
@@ -161,7 +163,7 @@ import { NgxGoogleAnalyticsModule } from 'ngx-google-analytics';
     VgOverlayPlayModule,
     VgBufferingModule,
     CountdownModule,
-    NgxGoogleAnalyticsModule.forRoot('G-JVSW1HQV3J')
+    NgxGoogleAnalyticsModule.forRoot('G-2TFTY4K8C5')
   ],
   providers: [],
   bootstrap: [AppComponent]

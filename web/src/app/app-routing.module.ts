@@ -31,9 +31,10 @@ import { MatchDetailsPageComponent } from './components/pages/match-details-page
 import { TournamentsDetailsPageComponent } from './components/pages/tournaments-details-page/tournaments-details-page.component';
 import { StreamSchedulePageComponent } from './components/pages/stream-schedule-page/stream-schedule-page.component';
 import { LandingComponent } from './components/landing/landing.component';
+import { ComingSoonComponent } from './components/coming-soon/coming-soon.component';
 
 const routes: Routes = [
-    {path: '', component: LandingComponent},
+    {path: '', component: ComingSoonComponent},
     {path: 'esports', component: EsportsHomeComponent},
     {path: 'bosting', component: BostingHomeComponent},
     {path: 'magazine', component: MagazineHomeComponent},
