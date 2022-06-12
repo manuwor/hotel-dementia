@@ -7,13 +7,13 @@
 }
 
 @font-face {
-    font-family: "Bold";
+    font-family: "Copper-Bold";
     src: url(./assets/fonts/CopperplateCC-Bold.ttf);
     font-weight: 900;
   }
   
   @font-face {
-    font-family: "Heavy";
+    font-family: "Copper-Heavy";
     src: url(./assets/fonts/CopperplateCC-Heavy.ttf);
     font-weight: 800;
   }
@@ -29,12 +29,12 @@
     font-weight: 700;
   }
   @font-face {
-    font-family: "Regular";
+    font-family: "Copper-Regular";
     src: url(./assets/fonts/OPTICopperplate.otf);
     font-weight: 700;
   }
 :root {
-    --fontFamily: 'Teko', sans-serif;
+    --fontFamily: 'Copper-Bold', sans-serif;
     --fontFamily2: BebasNeue-Regular;
     --fontFamily3: 'Poppins', sans-serif;
     --mainColor: #fc0820;

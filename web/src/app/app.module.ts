@@ -78,7 +78,7 @@ import { VgOverlayPlayModule } from '@videogular/ngx-videogular/overlay-play';
 import { VgBufferingModule } from '@videogular/ngx-videogular/buffering';
 import { CountdownModule } from 'ngx-countdown';
 import { CountDownTimerComponent } from './components/count-down-timer/count-down-timer.component';
-
+import { NgxGoogleAnalyticsModule } from 'ngx-google-analytics';
 @NgModule({
   declarations: [
     AppComponent,
@@ -160,7 +160,8 @@ import { CountDownTimerComponent } from './components/count-down-timer/count-dow
     VgControlsModule,
     VgOverlayPlayModule,
     VgBufferingModule,
-    CountdownModule
+    CountdownModule,
+    NgxGoogleAnalyticsModule.forRoot('G-JVSW1HQV3J')
   ],
   providers: [],
   bootstrap: [AppComponent]
